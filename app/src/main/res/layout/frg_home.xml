@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:id="@+id/img_icon" />
+
+        <TextView
+            android:text="保时捷 918"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/img_icon"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_toEndOf="@+id/img_icon"
+            android:id="@+id/tv_carname" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_lock_power_off"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="46dp"
+            android:layout_marginEnd="46dp"
+            android:id="@+id/img_open" />
+
+        <TextView
+            android:text="连接智能盒子"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_below="@+id/img_open"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="尊享系列"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_carserial"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_toEndOf="@+id/img_icon" />
+
+        <TextView
+            android:text="连接时如有弹出蓝牙对话框，请点取消！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@mipmap/home_auther_icon_f_p"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="车况检测"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_itinerary"
+            android:gravity="center"
+            android:maxWidth="15dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1" />
+        <View style="@style/divideh"/>
+        <TextView
+            android:text="故障码查询"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_searchcode"
+            android:gravity="center"
+            android:maxWidth="15dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <View style="@style/dividev"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="最近轮胎店"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nearby"
+            android:gravity="center"
+            android:maxWidth="15dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1" />
+        <View style="@style/divideh"/>
+        <TextView
+            android:text="测试连接蓝牙"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_testble"
+            android:gravity="center"
+            android:maxWidth="15dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <View style="@style/dividev"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="蓝牙参数设置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:maxWidth="15dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1" />
+        <View style="@style/divideh"/>
+        <TextView
+            android:text="     "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:maxWidth="15dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

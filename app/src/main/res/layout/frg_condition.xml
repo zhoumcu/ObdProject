@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:text="根据对行车电脑数据的监测分析，小安发现您的车良好"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_carname"
+            android:layout_alignTop="@+id/img_icon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_toEndOf="@+id/img_icon" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp"
+            android:id="@+id/img_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="19dp" />
+
+        <TextView
+            android:text="最近一次检查：2016-12-30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_carserial"
+            android:layout_alignBottom="@+id/img_icon"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_toEndOf="@+id/img_icon" />
+
+        <Button
+            android:text="人工检测"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_icon"
+            android:layout_toLeftOf="@+id/tv_carserial"
+            android:layout_toStartOf="@+id/tv_carserial"
+            android:id="@+id/button" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="有故障码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_itinerary"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1" />
+        <View style="@style/divideh"/>
+        <TextView
+            android:text="正常"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_searchcode"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <View style="@style/dividev"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="过高"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nearby"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1.06" />
+        <View style="@style/divideh"/>
+        <TextView
+            android:text="过高"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_testble"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <View style="@style/dividev"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="良好"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_weight="0.79" />
+        <View style="@style/divideh"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>
